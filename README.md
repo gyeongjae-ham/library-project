@@ -22,7 +22,7 @@
 4. Kotlin과 JPA를 함께 사용할 때 이야기거리 3가지
 5. 레포지토리를 Kotlin으로 변경하기
 6. 서비스 계층을 Kotlin으로 변경하기 - UserService.java
-7. BookService.java를 Kotlin으로 변경하고 Optional 제거하ㅣㄱ
+7. BookService.java를 Kotlin으로 변경하고 Optional 제거하기
 8. DTO를 Kotlin으로 변경하기
 9. Controller 계층을 Kotlin으로 변경하기
 10. 리팩토링 끝
