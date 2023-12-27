@@ -23,6 +23,8 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
+    // 객체 변환해주는 jackson kotlin 모듈 추가
+    implementation 'com.fasterxml.jackson.module:jackson-module-kotlin:2.13.3'
     // Kotlin reflection
     implementation 'org.jetbrains.kotlin:kotlin-reflect:1.6.21'
     runtimeOnly 'com.h2database:h2'
