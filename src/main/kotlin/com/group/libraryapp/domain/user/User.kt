@@ -2,7 +2,12 @@ package com.group.libraryapp.domain.user
 
 import com.group.libraryapp.domain.book.Book
 import com.group.libraryapp.domain.user.loanhistory.UserLoanHistory
-import javax.persistence.*
+import javax.persistence.CascadeType
+import javax.persistence.Entity
+import javax.persistence.GeneratedValue
+import javax.persistence.GenerationType
+import javax.persistence.Id
+import javax.persistence.OneToMany
 
 @Entity
 class User(
@@ -35,5 +40,4 @@ class User(
     fun returnBook(bookName: String) {
         this.userLoanHistories.first { history -> history.bookName == bookName }.doReturn()
     }
-
 }

@@ -53,5 +53,4 @@ class BookService(
     fun getBookStatistics(): List<BookStatResponse> {
         return bookRepository.getStats()
     }
-
 }
