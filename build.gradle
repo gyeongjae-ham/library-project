@@ -9,6 +9,8 @@ plugins {
     id 'org.jetbrains.kotlin.plugin.jpa' version '1.6.21'
     // spring bean class를 자동으로 열어서 @Transactional 등을 자유롭게 쓸 수 있도록 하는 플러그인
     id 'org.jetbrains.kotlin.plugin.spring' version '1.6.21'
+    // Querydsl 플러그인
+    id 'org.jetbrains.kotlin.kapt' version '1.6.21'
 }
 
 group = 'com.group'
@@ -27,6 +29,11 @@ dependencies {
     implementation 'com.fasterxml.jackson.module:jackson-module-kotlin:2.13.3'
     // Kotlin reflection
     implementation 'org.jetbrains.kotlin:kotlin-reflect:1.6.21'
+    // Querydsl
+    implementation 'com.querydsl:querydsl-jpa:5.0.0'
+    kapt("com.querydsl:querydsl-apt:5.0.0:jpa")
+    kapt("org.springframework.boot:spring-boot-configuration-processor")
+
     runtimeOnly 'com.h2database:h2'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
