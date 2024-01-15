@@ -81,5 +81,4 @@ class CalculatorTest {
         }
         throw IllegalArgumentException("기대하는 예외가 발생하지 않았습니다")
     }
-
 }

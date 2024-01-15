@@ -5,7 +5,11 @@ import com.group.libraryapp.dto.book.request.BookRequest
 import com.group.libraryapp.dto.book.request.BookReturnRequest
 import com.group.libraryapp.dto.book.response.BookStatResponse
 import com.group.libraryapp.service.book.BookService
-import org.springframework.web.bind.annotation.*
+import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.PostMapping
+import org.springframework.web.bind.annotation.PutMapping
+import org.springframework.web.bind.annotation.RequestBody
+import org.springframework.web.bind.annotation.RestController
 
 @RestController
 class BookController(
@@ -33,7 +37,7 @@ class BookController(
     }
 
     @GetMapping("/book/stat")
-    fun getBookStatics(): List<BookStatResponse> {
+    private fun getBookStatics(): List<BookStatResponse> {
         return bookService.getBookStatistics()
     }
 }
